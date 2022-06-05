@@ -12,7 +12,7 @@ app.use(bodyParser.json()); //transforms the text-based JSON input into JS-acces
 
 
 mongoose.connect(
-        "mongodb+srv://Nirajkumar:2gkjm25Aa8wh01yS@cluster0.kzih8.mongodb.net/group21Database?authSource=admin&replicaSet=atlas-11shqf-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true", {
+        "mongodb+srv://Nirajkumar:2gkjm25Aa8wh01yS@cluster0.kzih8.mongodb.net/Project-5?authSource=admin&replicaSet=atlas-11shqf-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true", {
             useNewUrlParser: true,
         }
     )
