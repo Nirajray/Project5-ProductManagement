@@ -12,7 +12,7 @@ const isValidObjectId = function(objectId) {
 
 const createProduct = async function(req, res) {
     try {
-
+  
         let reqBody = req.body
             //req body check
         if (Object.keys(reqBody).length === 0 && req.files.length===0) {

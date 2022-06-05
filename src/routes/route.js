@@ -6,7 +6,7 @@ const cartController = require("../controllers/cartController")
 const orderController = require('../controllers/orderController')
 
 
-const mid = require("../middleware/authe")
+const mid = require("../middleware/auth")
 //=============================user==========================================
 
 router.post("/register", userController.createUser)

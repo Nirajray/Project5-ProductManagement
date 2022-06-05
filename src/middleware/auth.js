@@ -22,12 +22,12 @@ const authentication = function ( req, res, next) {
      jwt.verify(tokenValue,'FunctionUp Group21', function(err, decoded) {
             if (err)
             return res.status(400).send({ status: false, message: "invalid token "}); 
-            console.log(decoded)
+           
 
-        let userLoggedIn = decoded.UserId; 
+        let userLoggedIn = decoded.userId; 
         req["userId"] = userLoggedIn; 
-     
-        next(); 
+
+        next(); userLoggedIn
      })
      
     } 
