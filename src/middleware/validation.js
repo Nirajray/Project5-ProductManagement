@@ -47,6 +47,6 @@ module.exports = {isValid, isValidStatus,validQuantity}
 
 module.exports.validInstallment = validInstallment;
 module.exports.isValidRequestBody= isValidRequestBody 
-module.exports.isValidRequestBody= isValidRequestBody
+
 
 

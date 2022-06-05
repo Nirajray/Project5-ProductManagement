@@ -26,8 +26,9 @@ const authentication = function ( req, res, next) {
 
         let userLoggedIn = decoded.userId; 
         req["userId"] = userLoggedIn; 
+        console.log(userLoggedIn)
 
-        next(); userLoggedIn
+        next(); 
      })
      
     } 

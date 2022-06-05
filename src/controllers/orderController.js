@@ -46,7 +46,7 @@ const createOrder = async function (req, res) {
             }
         }
         if (checkUserCart.items.length == 0) {
-            return res.status(202).send({ status: false, message: "cart have no items" });
+            return res.status(400).send({ status: false, message: "cart have no items" });
         }
         // if (checkUserCart.items.length > 0) {
         //     let sum = 0;
@@ -110,9 +110,9 @@ const updateOrder= async function(req,res){
             return res.status(400).send({Status: false , message: "This user does not exist this order"}) 
         }
 
-        if(checkOrder.status === "cancelled"){
-            return res.status(400).send({Status: false , message: "Your order has been cancelled"})  
-        }
+        // if(checkOrder.status === "cancelled"){
+        //     return res.status(400).send({Status: false , message: "Your order has been cancelled"})  
+        // }
 
       
         let orderPresent = await orderModel.findOne({ _id: orderId, isDeleted: false })
